@@ -33,7 +33,7 @@
 .flex-wrap{
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    
 }
 
 .flex-between{
@@ -131,12 +131,14 @@ section.high-section{
 .conatiner-played{
     background-color: brown;
     padding: 1.5rem;
+    
 }
 
 .card-music{
-    width: 14rem;
-    height: 14rem;
+    width: calc( (100% / 6) - 2rem);
     background-color: aqua;
+    margin: 1rem;
+    max-width: 60%;
 }
 
 
