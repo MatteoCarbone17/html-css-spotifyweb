@@ -25,27 +25,31 @@
     flex-direction: column;
 }
 
-.flex-around{
+.flex-wrap{
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-basis: 20%;
+    gap: 1.5rem;
+
+    
 }
 
 /* dimensioni fisse per il layout, da cancellare  */
 
+@media screen and (min-width: 992px ) {   
+
+
 header{
     height: 92vh;
     width: 13vw;
-    background-color: black;   
+    background-color: black;
+    
 }
-
 
 main{
     height: 92vh;
     width: 87vw;
     background-color: rgb(20, 25, 34);
-     
+  
 }
 
 footer{
@@ -53,6 +57,7 @@ footer{
     width: 100%;
     background-color: rgb(40, 40, 40);
     position: fixed;
+   
 }
 
 
@@ -132,4 +137,44 @@ section.high-section{
 
 .third-container-music{
     background-color: yellow;
+}
+
+
+
+}
+
+
+
+
+
+
+/* Breakpoint md >768 */
+
+@media screen and (min-width: 768px ){
+
+
+
+
+}
+
+
+
+/* Breakpoint sm >576 */
+
+@media screen and (min-width: 576px ){
+
+
+
+
+}
+
+
+
+/* Breakpoint xs <576 */
+
+@media screen and (max-width: 576px ){
+
+
+
+
 }
