@@ -14,6 +14,11 @@
     justify-content: center;
 }
 
+.flex-center-line{
+    display: flex;
+    align-items: center;
+}
+
 .flex-end{
     display: flex;
     justify-content: flex-end;
@@ -29,11 +34,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+}
 
-    
+.flex-between{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* dimensioni fisse per il layout, da cancellare  */
+
+/* brealpoint lg > 992px */
 
 @media screen and (min-width: 992px ) {   
 
@@ -140,6 +150,53 @@ section.high-section{
 }
 
 
+.playback{
+    width: 13vw;
+    height: 5rem;
+    background-color: aqua;
+    
+}
+
+.central-bar{
+    width: 26vw;
+    height: 5rem;
+    background-color: aqua;
+
+}
+
+.settings{
+    width: 13vw;
+    height: 8vh;
+    background-color: aqua;
+}
+
+
+.info-playback{
+    background-color: red;
+    width: 40%;
+    height: 100%;
+}
+
+.save-playback{
+    background-color: red;
+    width: 40%;
+    height: 100%;
+}
+
+.nav-music{
+    background-color: red;
+    height: 50%;
+}
+
+.loading-bar{
+    width: 80%;
+    border: 5px solid gray;
+    border-radius: 1rem;
+}
+
+.container-loading-bar{
+    width: 40%;
+}
 
 }
 
@@ -148,7 +205,9 @@ section.high-section{
 
 
 
-/* Breakpoint md >768 */
+
+
+/* Breakpoint md >768px */
 
 @media screen and (min-width: 768px ){
 
@@ -159,7 +218,7 @@ section.high-section{
 
 
 
-/* Breakpoint sm >576 */
+/* Breakpoint sm >576px */
 
 @media screen and (min-width: 576px ){
 
@@ -170,7 +229,7 @@ section.high-section{
 
 
 
-/* Breakpoint xs <576 */
+/* Breakpoint xs <576px */
 
 @media screen and (max-width: 576px ){
 
