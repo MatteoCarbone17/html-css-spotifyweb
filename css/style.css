@@ -43,32 +43,35 @@
 
 /* dimensioni fisse per il layout, da cancellare  */
 
-/* brealpoint lg > 992px */
 
-@media screen and (min-width: 992px ) {   
+
 
 
 header{
-    height: 92vh;
-    width: 13vw;
     background-color: black;
     
 }
 
 main{
-    height: 92vh;
-    width: 87vw;
+    height: 100%;
+    width: 100%;
     background-color: rgb(20, 25, 34);
   
 }
 
 footer{
-    height: 8vh;
+    height: 10%;
     width: 100%;
     background-color: rgb(40, 40, 40);
     position: fixed;
    
 }
+
+.container-body{
+    height: 95%;
+}
+
+
 
 
 
@@ -130,17 +133,49 @@ section.high-section{
 
 .conatiner-played{
     background-color: brown;
-    padding: 1.5rem;
     
 }
 
 .card-music{
+    
     width: calc( (100% / 6) - 2rem);
-    background-color: aqua;
-    margin: 1rem;
-    max-width: 60%;
+    
+    
+    
 }
 
+div.img-music{
+    padding: 1rem;
+    width: 300px;
+    height: 300px;
+}
+
+
+div.img-music>img{
+    height: 80%;
+    width: 80%;
+}
+
+
+
+div.info-music{
+    width: 80%;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.info-music>h2{
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.info-music>p{
+    padding: 1rem;
+    color: lightgray;
+    text-align: center;
+}
 
 /* solo per il background? */
 .second-container-music{
@@ -153,22 +188,19 @@ section.high-section{
 
 
 .playback{
-    width: 13vw;
-    height: 5rem;
+    
     background-color: aqua;
     
 }
 
 .central-bar{
-    width: 26vw;
-    height: 5rem;
+    
     background-color: aqua;
 
 }
 
 .settings{
-    width: 13vw;
-    height: 8vh;
+    
     background-color: aqua;
 }
 
@@ -200,9 +232,6 @@ section.high-section{
     width: 40%;
 }
 
-}
-
-
 
 
 
@@ -222,7 +251,17 @@ section.high-section{
 
 /* Breakpoint sm >576px */
 
-@media screen and (min-width: 576px ){
+@media screen and (max-width: 576px ){
+    
+    div.info-music{
+        width: 80%;
+        background-color: black;
+        margin: 0 auto;
+    }
+
+    div.card-music{
+        width: 50%;
+    }
 
 
 
