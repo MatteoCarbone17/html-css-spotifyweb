@@ -261,17 +261,17 @@ section.central-bar{
 }
 
 .loading-bar-volume{
-    width: 80%;
+    width: 150px;
     border: 2px solid gray;
     border-radius: 1rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 }
 
 
-.settings{
-    width: 10%;
-}
+
 .save-playback{
-    width: 100%;
+    width: 30%;
 }
 
 
