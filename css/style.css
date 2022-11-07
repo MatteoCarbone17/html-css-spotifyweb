@@ -41,7 +41,7 @@
     justify-content: space-between;
 }
 
-/* dimensioni fisse per il layout, da cancellare  */
+
 
 
 
@@ -49,13 +49,16 @@
 
 header{
     background-color: black;
-    
+    color: white;
+    padding: 1rem;
+    width: 200px;
 }
 
 main{
     height: 100%;
     width: 100%;
     background-color: rgb(20, 25, 34);
+    overflow-y: scroll;
   
 }
 
@@ -73,118 +76,125 @@ footer{
 
 
 
-
-
-
 div.logo{
     width: 100%;
-    height: 4rem;
-    background-color: aqua;
+    height: 100%;
+    margin-bottom: 3rem;
+    margin-top: 1.1rem;
+    
 }
+
+
 
 
 section.nav-bar{
     height: 8rem;
     width: 100%;
-    background-color: blueviolet;
+    
 }
 
+section.nav-bar>ul>li{
+   font-size: 1.2rem;
+   padding-bottom: .8rem;
+}
+
+
 section.playlist-section{
-    height: 16rem;
-    width: 100%;
-    background-color: antiquewhite;
+    width: 100%; 
+}
+
+section.playlist-section>ul>li{
+    font-size: 1.2rem;
+   padding-bottom: .8rem;
 }
 
 section.profile{
-    background-color: burlywood;
     width: 100%;
     height: 5rem;
+    justify-items: end;
 }
+
 
 section.high-section{
     width: 100%;
-    height: 5rem;
-    background-color: coral;
-
+    background-color: rgb(8, 11, 18);
 }
 
 .div-upgrade{
-    width: 15%;
-    height: 2rem;
-    background-color: blue;
+    padding: 1.5rem 0 1.5rem 0;
+    width: 20rem
 }
 
+.div-upgrade>button{
+    width: 100%;
+    padding: .7rem;
+    border-radius: 5rem;
+    background-color: black;
+    border: white solid 2px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+
+
 .nav-bar-main{
-    background-color: cadetblue;
+    padding-top: 1.2rem;
     width: 100%;
 }
 
-.nav-bar-main>ul>li{
-    color: white;
-    display: inline;
+li{
     list-style-type: none;
+
+
+}
+.nav-bar-main>ul>li{
+    color: rgb(123, 126, 130);
+    display: inline;
+    padding-left: 1rem;
 }
 
 
-.title-music-container{
-    background-color: azure;
+.title-music-container>h2{
+    padding: 2rem 0 1.5rem 1rem;
+    font-size: 2rem;
+    color: white;
     
+}
+
+.title-music-container>p{
+    padding: 0 0 1.5rem 1rem;
+    font-size: 1.1rem;
+    color: white;
 }
 
 .conatiner-played{
-    background-color: brown;
-    
+
 }
 
-.card-music{
-    
-    width: calc( (100% / 6) - 2rem);
-    
-    
-    
-}
+div.card-music{
+    width: calc((100% / 6 ) - 2rem );
+    margin: 2rem 1rem 3rem 1rem;
+  
+} 
 
-div.img-music{
-    padding: 1rem;
-    width: 300px;
-    height: 300px;
+div.card-music .img-music>img{
+    width: 100%;
+    min-width: 50%;
 }
 
 
-div.img-music>img{
-    height: 80%;
-    width: 80%;
-}
-
-
-
-div.info-music{
-    width: 80%;
-    background-color: blue;
-    margin: 0 auto;
-}
-
-.info-music>h2{
-    font-size: 1.3rem;
-    padding-top: 1rem;
+div.card-music .info-music{
+    text-align: center;
     color: white;
-    text-align: center;
+    
 }
 
-.info-music>p{
-    padding: 1rem;
-    color: lightgray;
-    text-align: center;
-}
+
+
+
+
 
 /* solo per il background? */
-.second-container-music{
-    background-color: blue;
-}
-
-.third-container-music{
-    background-color: yellow;
-}
 
 
 .playback{
@@ -236,12 +246,21 @@ div.info-music{
 
 
 
+/* Breakpoint md <768px */
+
+@media screen and (max-width: 768px ){
+
+    div.card-music{
+        width: calc((100% / 4 ) - 2rem );
+        margin: 2rem 1rem 3rem 1rem;
+      
+    } 
 
 
-/* Breakpoint md >768px */
-
-@media screen and (min-width: 768px ){
-
+    .div-upgrade{
+        padding: 1.5rem 0 1.5rem 0;
+        width: 50%; 
+    }
 
 
 
@@ -249,22 +268,11 @@ div.info-music{
 
 
 
-/* Breakpoint sm >576px */
+/* Breakpoint sm <576px */
 
 @media screen and (max-width: 576px ){
     
-    div.info-music{
-        width: 80%;
-        background-color: black;
-        margin: 0 auto;
-    }
-
-    div.card-music{
-        width: 50%;
-    }
-
-
-
+    
 
 }
 
