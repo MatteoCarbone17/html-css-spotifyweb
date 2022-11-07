@@ -216,7 +216,6 @@ div.info-playback>p{
 
 .save-playback{
     
-    width: 30%;
     height: 100%;
 }
 
@@ -227,35 +226,52 @@ div.info-playback>p{
 
 
 
-.central-bar{
-    
-    background-color: aqua;
 
+section.central-bar{
+    width: 45%;
+    margin: 0 auto;
 }
-
-.settings{
-    
-    background-color: aqua;
-}
-
-
-
-
-
 
 .nav-music{
-    background-color: red;
     height: 50%;
 }
 
-.loading-bar{
-    width: 80%;
-    border: 5px solid gray;
-    border-radius: 1rem;
+.nav-music>i{
+    color: white;
+    padding: 1rem 0 1rem 1.5rem;
+    font-size: 1.5rem;
 }
 
 .container-loading-bar{
     width: 40%;
+}
+
+.loading-music>p{
+    color: white;
+    padding-left: .7rem;
+    padding-right: .7rem;
+
+
+
+}
+.loading-bar{
+    width: 50%;
+    border: 2px solid gray;
+    border-radius: 1rem;
+}
+
+.loading-bar-volume{
+    width: 80%;
+    border: 2px solid gray;
+    border-radius: 1rem;
+}
+
+
+.settings{
+    width: 10%;
+}
+.save-playback{
+    width: 100%;
 }
 
 
