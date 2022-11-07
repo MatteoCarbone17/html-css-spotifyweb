@@ -56,7 +56,7 @@ header{
 
 main{
     height: 100%;
-    width: 100%;
+    width: calc(100% - 200px);
     background-color: rgb(20, 25, 34);
     overflow-y: scroll;
   
@@ -105,7 +105,7 @@ section.playlist-section{
 
 section.playlist-section>ul>li{
     font-size: 1.2rem;
-   padding-bottom: .8rem;
+    padding-bottom: .8rem;
 }
 
 section.profile{
@@ -173,7 +173,7 @@ li{
 
 div.card-music{
     width: calc((100% / 6 ) - 2rem );
-    margin: 2rem 1rem 3rem 1rem;
+    margin: 2rem 1rem 2rem 1rem;
   
 } 
 
@@ -246,13 +246,13 @@ div.card-music .info-music{
 
 
 
-/* Breakpoint md <768px */
+/* Breakpoint md 992px */
 
-@media screen and (max-width: 768px ){
+@media screen and (max-width: 992px ){
 
     div.card-music{
         width: calc((100% / 4 ) - 2rem );
-        margin: 2rem 1rem 3rem 1rem;
+        margin: 2rem 1rem 2rem 1rem;
       
     } 
 
@@ -263,26 +263,21 @@ div.card-music .info-music{
     }
 
 
-
 }
 
-
-
-/* Breakpoint sm <576px */
-
-@media screen and (max-width: 576px ){
-    
-    
-
-}
 
 
 
 /* Breakpoint xs <576px */
 
-@media screen and (max-width: 576px ){
+@media screen and (max-width: 768px ){
 
+    div.card-music{
+        width: calc((100% / 2 ) - 2rem );
+        margin: 2rem 1rem 2rem 1rem;
+      
+    } 
 
-
+    
 
 }
