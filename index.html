@@ -16,16 +16,17 @@
         <header class="flex-column">
             <div id="conatiner-header">
                 <div class="logo">
-                    <img src="./img/logo.svg" alt="logo">
+                    <img src="./img/logo-small.svg" class="hidden">
+                    <img src="./img/logo.svg" class="visual">
                 </div>
             </div>
             <section class="nav-bar">
                 <ul>
-                    <li> <i class="fa-solid fa-house"></i> Home 
+                    <li> <i class="fa-solid fa-house"></i>  <span class="li-hidden"> Home </span>
                     </li>
-                    <li> <i class="fa-solid fa-magnifying-glass"></i> cerca
+                    <li> <i class="fa-solid fa-magnifying-glass"></i> <span class="li-hidden">Cerca</span> 
                     </li>
-                    <li> <i class="fa-regular fa-bookmark"></i> La tua libreria
+                    <li> <i class="fa-regular fa-bookmark"></i>  <span class="li-hidden">La tua libreria</span> 
                     </li>
                 </ul>
             </section>
@@ -90,7 +91,7 @@
                 </h2>
             </div>
             <section class="conatiner-played flex-wrap">
-                <div class="card-music">
+                <div class="card-music flex-column flex-center-line">
                     <div class="img-music">
                         <img src="./img/metal_lifting.jpg" alt="img">
                     </div>
@@ -103,7 +104,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card-music">
+                <div class="card-music flex-column flex-center-line">
                     <div class="img-music">
                         <img src="./img/stranger.jpeg" alt="img">
                     </div>
@@ -116,7 +117,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card-music">
+                <div class="card-music flex-column flex-center-line">
                     <div class="img-music">
                         <img src="./img/aquietplace.jpeg" alt="img">
                     </div>
@@ -129,7 +130,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card-music">
+                <div class="card-music flex-column flex-center-line">
                     <div class="img-music">
                         <img src="./img/split.jpeg" alt="img">
                     </div>
@@ -142,7 +143,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card-music">
+                <div class="card-music flex-column flex-center-line">
                     <div class="img-music">
                         <img src="./img/cure.jpeg" alt="img">
                     </div>
@@ -155,7 +156,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card-music">
+                <div class="card-music flex-column flex-center-line">
                     <div class="img-music">
                         <img src="./img/sinister.jpeg" alt="img">
                     </div>
@@ -237,14 +238,16 @@
         <div class="footer-container flex-between">
             <section class="playback flex-between">
                 <div class="info-playback flex-center-line">
-                    <img src="" alt="album">
+                    <div class="img-left-container">
+                        <img src="./img/player_left.jpg" alt="album"> 
+                    </div>
                     <p>
-                        name song
+                        Sinister <br>
+                        Brano nome
                     </p>
                 </div>
                 <div class="save-playback flex-center-line">
-                    icon icon
-
+                    <i class="fa-regular fa-heart"></i> <i class="fa-regular fa-folder"></i>
                 </div>
 
             </section>

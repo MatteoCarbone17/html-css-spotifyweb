@@ -46,7 +46,6 @@
 
 
 
-
 header{
     background-color: black;
     color: white;
@@ -55,7 +54,6 @@ header{
 }
 
 main{
-    height: 100%;
     width: calc(100% - 200px);
     background-color: rgb(20, 25, 34);
     overflow-y: scroll;
@@ -63,15 +61,18 @@ main{
 }
 
 footer{
-    height: 10%;
+    height: 5vh;
     width: 100%;
     background-color: rgb(40, 40, 40);
     position: fixed;
-   
+}
+
+.footer-container{
+    height: 100%;
 }
 
 .container-body{
-    height: 95%;
+    height: 95vh;
 }
 
 
@@ -82,6 +83,10 @@ div.logo{
     margin-bottom: 3rem;
     margin-top: 1.1rem;
     
+}
+
+div.logo img.hidden{
+    display: none;
 }
 
 
@@ -167,41 +172,60 @@ li{
     color: white;
 }
 
-.conatiner-played{
 
-}
 
 div.card-music{
-    width: calc((100% / 6 ) - 2rem );
-    margin: 2rem 1rem 2rem 1rem;
+    width: calc((100% / 6 ) - 3rem );
+    margin: 1.5rem;
   
 } 
 
 div.card-music .img-music>img{
     width: 100%;
-    min-width: 50%;
+    max-width: 300px;
 }
 
 
 div.card-music .info-music{
     text-align: center;
     color: white;
-    
 }
 
 
+section.playback{
+    height: 100%;
 
-
-
-
-/* solo per il background? */
-
-
-.playback{
-    
-    background-color: aqua;
-    
 }
+div.info-playback{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.img-left-container>img{
+    width: 50px;
+
+}
+
+
+div.info-playback>p{
+    color: lightgray;
+    font-size: .8rem;
+    padding-left: .5rem;
+}
+
+.save-playback{
+    
+    width: 30%;
+    height: 100%;
+}
+
+.save-playback>i{
+    color: white;
+    padding-left: .5rem;
+}
+
+
 
 .central-bar{
     
@@ -215,17 +239,9 @@ div.card-music .info-music{
 }
 
 
-.info-playback{
-    background-color: red;
-    width: 40%;
-    height: 100%;
-}
 
-.save-playback{
-    background-color: red;
-    width: 40%;
-    height: 100%;
-}
+
+
 
 .nav-music{
     background-color: red;
@@ -252,7 +268,7 @@ div.card-music .info-music{
 
     div.card-music{
         width: calc((100% / 4 ) - 2rem );
-        margin: 2rem 1rem 2rem 1rem;
+        margin: 1.5rem 1rem 1.5rem 1rem;
       
     } 
 
@@ -268,16 +284,65 @@ div.card-music .info-music{
 
 
 
-/* Breakpoint xs <576px */
+/* Breakpoint sm <576px */
 
 @media screen and (max-width: 768px ){
 
     div.card-music{
         width: calc((100% / 2 ) - 2rem );
-        margin: 2rem 1rem 2rem 1rem;
+        margin: 1.5rem 1rem 1.5rem 1rem;
       
     } 
 
+    
+
+}
+
+@media screen and (max-width: 576px ){
+
+    header{
+        width: 50px;
+    }
+
+    main{
+        height: 100%;
+        width: calc(100% - 50px);
+        background-color: rgb(20, 25, 34);
+        overflow-y: scroll;
+      
+    }
+    
+    div.logo{
+        width: 100%;
+        height: 100%;
+        
+        
+    }
+
+    div.logo img.visual{
+        display: none;
+    }
+    div.logo img.hidden{
+        display: block;
+        width: 25px;
+    }
+        
+    
+    .fa-solid,
+    .fa-regular>i{
+        visibility: visible;
+    }
+
+    section.nav-bar>ul span{
+        font-size: 1.2rem;
+        padding-bottom: .8rem;
+        display: none;
+     }
+
+     section.playlist-section>ul>li{
+        display: none;
+     }
+    
     
 
 }
