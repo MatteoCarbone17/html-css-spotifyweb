@@ -376,6 +376,14 @@ section.central-bar{
         width: 50%; 
     }
 
+    .nav-bar-main{
+        padding-top: 1.2rem;
+        margin: 0 auto;
+        text-align: center;
+    
+    }
+    
+
 
 }
 
