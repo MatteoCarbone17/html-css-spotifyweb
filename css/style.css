@@ -368,6 +368,11 @@ section.central-bar{
         width: 25px;
     }
         
+
+    section.profile span{
+        display: none;
+    }
+
     
     .fa-solid,
     .fa-regular>i{
