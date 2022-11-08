@@ -247,12 +247,18 @@ header li{
 div.card-music{
     width: calc((100% / 6 ) - 3rem );
     margin: 1.5rem;
-    transition: all .5s;
-    position: relative;
+    
   
 } 
-div.card-music:hover{
-    opacity: calc(40%);  
+
+div.img-music{
+    transition: all .7s;
+    position: relative;
+}
+
+div.img-music:hover{
+    opacity: calc(40%); 
+    transform: scale(1.05);
 }
 
 .img-music .i-hidden-hover{
@@ -265,7 +271,7 @@ div.card-music:hover{
     position: absolute;
     font-size: 5rem;
     color: white;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -407,7 +413,6 @@ section.central-bar{
     
     }
     
-
 
 }
 
