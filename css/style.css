@@ -270,7 +270,8 @@ div.card-music .info-music>p{
 
 
 .card-music>.img-circle>img{
-    border-radius: 5rem;
+    border-radius: 10rem;
+    
 }
 
 section.playback{
