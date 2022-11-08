@@ -66,19 +66,19 @@ main{
 }
 
 footer{
-    height: 5vh;
+    height: 6vh;
     width: 100%;
     background-color: rgb(40, 40, 40);
     position: fixed;
-    z-index: 2;
+    
 }
 
 .footer-container{
-    height: 5vh;
+    height: 6vh;
 }
 
 .container-body{
-    height: 95vh;
+    height: 94vh;
 }
 
 
@@ -106,8 +106,19 @@ section.nav-bar{
 section.nav-bar>ul>li{
    font-size: 1.2rem;
    padding-bottom: .8rem;
+   color: rgb(124, 126, 131);
+   transition: all .5s;
 }
 
+section.nav-bar>ul>li:hover{
+    color: white;
+    
+ }
+
+
+section.nav-bar>ul>li:first-child{
+    color: white;
+}
 
 
 
@@ -115,16 +126,29 @@ section.playlist-section{
     width: 100%; 
 }
 
+/* selettore icona */
+
 section.playlist-section>ul>li>i{
     font-size: 2.5rem;
     padding-right: .3rem;
-    
 }
+
 
 
 section.playlist-section>ul>li{
     font-size: 1.2rem;
     padding-bottom: .8rem;
+    color: rgb(124, 126, 131);
+    transition: all .5s;
+}
+
+section.playlist-section>ul>li:hover{
+    color: white;
+}
+
+
+section.playlist-section>ul>li:first-child{
+    color: white;
 }
 
 section.profile{
@@ -149,7 +173,8 @@ section.high-section{
 
 .div-upgrade{
     padding: 1.5rem 0 1.5rem 0;
-    width: 20rem
+    width: 20rem;
+    margin-right: 1.5rem;
 }
 
 .div-upgrade>button{
@@ -160,6 +185,11 @@ section.high-section{
     border: white solid 2px;
     color: white;
     font-size: 1.1rem;
+    transition: all .5s;
+}
+
+.div-upgrade>button:hover{
+    transform: scale(1.1);
 }
 
 
@@ -178,7 +208,13 @@ header li{
     color: rgb(123, 126, 130);
     display: inline;
     padding-left: 1rem;
+    transition: all .5s;
 }
+
+.nav-bar-main>ul>li:hover{
+    color: white;
+}
+
 
 
 .nav-bar-main>ul>li:first-child{
@@ -196,7 +232,7 @@ header li{
 .title-music-container>p{
     padding: 0 0 1.5rem 1rem;
     font-size: 1.1rem;
-    color: white;
+    color: rgb(124, 126, 131);
 }
 
 
@@ -207,20 +243,30 @@ div.card-music{
     transition: all .5s;
   
 } 
+div.card-music:hover{
+    opacity: calc(20%);
+    
+}
 
 div.card-music .img-music>img{
     width: 100%;
     max-width: 300px;
     min-width: 115px;
-    transition: all .5s linear;
 }
 
 
 div.card-music .info-music{
     text-align: center;
-    color: white;
     padding-top: .8rem;
+    color: white;
 }
+
+div.card-music .info-music>p{
+    text-align: center;
+    padding-top: .8rem;
+    color: rgb(124, 126, 131);
+}
+
 
 
 .card-music>.img-circle>img{
