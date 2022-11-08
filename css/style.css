@@ -157,7 +157,14 @@ section.profile{
 
 section.profile>p{
     padding-bottom: .7rem;
+    color: rgb(124, 126, 131);
+    transition: all .5s;
 }
+
+section.profile>p:hover{
+    color: white;
+}
+
 
 section.profile>h3{
     padding-top: 1rem;
@@ -241,12 +248,29 @@ div.card-music{
     width: calc((100% / 6 ) - 3rem );
     margin: 1.5rem;
     transition: all .5s;
+    position: relative;
   
 } 
 div.card-music:hover{
-    opacity: calc(20%);
+    opacity: calc(40%);  
+}
+
+.img-music .i-hidden-hover{
+    display: none;
     
 }
+
+.img-music:hover .i-hidden-hover{
+    display: inline;
+    position: absolute;
+    font-size: 5rem;
+    color: white;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 div.card-music .img-music>img{
     width: 100%;
