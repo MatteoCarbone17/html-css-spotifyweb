@@ -346,6 +346,7 @@ section.central-bar{
 
 .nav-music{
     height: 50%;
+    padding-top: 1.1rem;
 }
 
 .nav-music>i{
