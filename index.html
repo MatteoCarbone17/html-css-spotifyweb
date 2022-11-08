@@ -13,47 +13,53 @@
 </head>
 <body>
     <section class="container-body flex">
-        <header class="flex-column">
-            <div id="conatiner-header">
-                <div class="logo">
-                    <img src="./img/logo-small.svg" class="hidden">
-                    <img src="./img/logo.svg" class="visual">
+        <header class="flex-column flex-between">
+            <div class="conatiner-nav-bar-left flex-column">
+                <div id="conatiner-header">
+                    <div class="logo">
+                        <img src="./img/logo-small.svg" class="hidden">
+                        <img src="./img/logo.svg" class="visual">
+                    </div>
                 </div>
+                <section class="nav-bar"> 
+                    <ul>
+                        <li> <i class="fa-solid fa-house"></i>  <span class="li-hidden"> Home </span>
+                        </li>
+                        <li> <i class="fa-solid fa-magnifying-glass"></i> <span class="li-hidden">Cerca</span> 
+                        </li>
+                        <li> <i class="fa-regular fa-bookmark"></i>  <span class="li-hidden">La tua libreria</span> 
+                        </li>
+                    </ul>
+                </section>
+                <section class="playlist-section">
+                    <ul>
+                        <li> <strong>Playlist</strong>  
+                        </li>
+                        <li>  <i class="fa-solid fa-folder-plus"></i> Crea playlist
+                        </li>
+                        <li>Nome Playlist
+                        </li>
+                        <li> Nome Playlist
+                        </li>
+                        <li>  Nome  Playlist
+                        </li>
+                        <li> Nome  Playlist
+                        </li>
+                        <li> Nome  Playlist
+                        </li>
+                        <li>Nome  Playlist
+                        </li>
+                    </ul>
+                </section>
             </div>
-            <section class="nav-bar">
-                <ul>
-                    <li> <i class="fa-solid fa-house"></i>  <span class="li-hidden"> Home </span>
-                    </li>
-                    <li> <i class="fa-solid fa-magnifying-glass"></i> <span class="li-hidden">Cerca</span> 
-                    </li>
-                    <li> <i class="fa-regular fa-bookmark"></i>  <span class="li-hidden">La tua libreria</span> 
-                    </li>
-                </ul>
-            </section>
-            <section class="playlist-section">
-                <ul>
-                    <li> <strong>Playlist</strong>  
-                    </li>
-                    <li>  <i class="fa-solid fa-folder-plus"></i> Crea playlist
-                    </li>
-                    <li>Nome Playlist
-                    </li>
-                    <li> Nome Playlist
-                    </li>
-                    <li>  Nome  Playlist
-                    </li>
-                    <li> Nome  Playlist
-                    </li>
-                    <li> Nome  Playlist
-                    </li>
-                    <li>Nome  Playlist
-                    </li>
-                </ul>
-            </section>
             <section class="profile">
-                <div>
-                    john doe
-                </div>
+                 <p>
+                    <i class="fa-regular fa-circle-down"></i> installa app
+                </p>
+                 <hr>
+                <h3>
+                    <i class="fa-regular fa-user"></i> Jonh Dohn
+                </h3>
             </section>
         </header>
     
@@ -63,7 +69,7 @@
                     <button type="submit"> Effettua Upgrade </button>
                 </div>
             </section>
-            <section class="nav-bar-main flex-center">
+            <section class="nav-bar-main flex-around">
                 <ul>
                     <li>
                        IN EVIDENZA
@@ -272,9 +278,6 @@
                 </div>
                 
                 <div class="loading-bar-volume"></div>
-                
-                
-                
 
             </section>
         </div>

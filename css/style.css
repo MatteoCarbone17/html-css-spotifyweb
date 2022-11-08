@@ -41,7 +41,10 @@
     justify-content: space-between;
 }
 
-
+.flex-around{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 
@@ -65,15 +68,17 @@ footer{
     width: 100%;
     background-color: rgb(40, 40, 40);
     position: fixed;
+    z-index: 2;
 }
 
 .footer-container{
-    height: 100%;
+    height: 5vh;
 }
 
 .container-body{
     height: 95vh;
 }
+
 
 
 
@@ -91,17 +96,17 @@ div.logo img.hidden{
 
 
 
-
 section.nav-bar{
-    height: 8rem;
     width: 100%;
-    
+    margin-bottom: 1.5rem;
 }
 
 section.nav-bar>ul>li{
    font-size: 1.2rem;
    padding-bottom: .8rem;
 }
+
+
 
 
 section.playlist-section{
@@ -122,9 +127,17 @@ section.playlist-section>ul>li{
 
 section.profile{
     width: 100%;
-    height: 5rem;
-    justify-items: end;
 }
+
+section.profile>p{
+    padding-bottom: .7rem;
+}
+
+section.profile>h3{
+    padding-top: 1rem;
+}
+
+
 
 
 section.high-section{
@@ -151,18 +164,22 @@ section.high-section{
 
 .nav-bar-main{
     padding-top: 1.2rem;
-    width: 100%;
+    margin: 0 auto;
+
 }
 
-li{
+header li{
     list-style-type: none;
-
 
 }
 .nav-bar-main>ul>li{
     color: rgb(123, 126, 130);
     display: inline;
     padding-left: 1rem;
+}
+
+.nav-bar-main>ul>li:first-child{
+    border-bottom: 3px solid greenyellow;
 }
 
 
